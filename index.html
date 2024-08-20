@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+
+    <title>Calculator | Calculate Everything you need</title>
+</head>
+<body>
+
+     <div class="container">
+     	<div class="calcFrame">
+     		
+     		<!-- heading section starts here -->
+     		<div class="header">
+     			<div class="menuBar">
+     				<span></span>
+     				<span></span>
+     				<span></span>
+     			</div>
+                    <div class="closeMenuBar">
+                         X
+                    </div>
+     			<h2 class="visible">Calculator</h2>
+     		</div>
+     		
+     		<!-- sliding menubar start here -->
+
+     		<div class="slidingMenuBar">
+
+                    <p class="themeOption">Themes</p>
+                    <ul class="themeOptionUl">
+                         <li id="themeFirstOption">Decent Look 1</li>
+                         <li id="themeSecondOption">Decent Look 2</li>
+                         <li id="themeThirdOption" class="themeOptionBack">Glass Look</li>
+                    </ul>
+                    <p class="aboutOption">About Me</p>
+                    <p class="aboutOptionDetails">
+                        Developed & Disgned by <a href="mailto:aruntalukder09@gamil.com?cc=gourabtalukdar0713@gmail.com&subject=Regarding the FEEDBACK of Online Calculator" class="themeOptionBack">@gourab </a>
+                    </p>
+     		</div>
+     		
+     		<!-- answer shower starts here -->
+     		<div id="inputField">
+     			<div id="inputFieldRemember"></div>
+     			<div id="inputFieldAnswer"></div>
+     		</div>
+
+     		<!-- all button starts here -->
+     		<div class="btnDivFrame">
+     			<div class="btnDiv1">
+     				<input type="button" name="" value="AC" class="visible" onclick="allClear()">
+     				<input type="button" name="" value="C" class="visible" onclick="singleClear()">
+     				<input type="button" name="" value="%" class="visible" onclick="show('%')">
+     				<input type="button" name="" value="/" onclick="show('/')">
+     			</div>
+     			<div class="btnDiv2">
+     				<input type="button" name="" value="7" class="visible" onclick="show(7)">
+     				<input type="button" name="" value="8" class="visible" onclick="show(8)">
+     				<input type="button" name="" value="9" class="visible" onclick="show(9)">
+     				<input type="button" name="" value="*" onclick="show('*')">
+     			</div>
+     			<div class="btnDiv3">
+     				<input type="button" name="" value="4" class="visible" onclick="show(4)">
+     				<input type="button" name="" value="5" class="visible" onclick="show(5)">
+     				<input type="button" name="" value="6" class="visible" onclick="show(6)">
+     				<input type="button" name="" value="-" onclick="show('-')">
+     			</div>
+     			<div class="btnDiv4">
+     				<input type="button" name="" value="1" class="visible" onclick="show(1)">
+     				<input type="button" name="" value="2" class="visible" onclick="show(2)">
+     				<input type="button" name="" value="3" class="visible" onclick="show(3)">
+     				<input type="button" name="" value="+" onclick="show('+')">
+     			</div>
+     			<div class="btnDiv5">
+     				<input type="button" name="" value="0" onclick="show(0)">
+     				<input type="button" name="" value="00" onclick="show('00')">
+     				<input type="button" name="" value="." onclick="show('.')">
+     				<input type="button" name="" value="=" onclick="result()">
+     			</div>
+     		</div>
+     	</div>	
+
+
+     	<!-- moving boxes created here -->
+     	<div class="movingBox1"></div>
+     	<div class="movingBox2"></div>
+     	<div class="movingBox3"></div>
+     	<div class="movingBox4"></div>
+     </div>
+
+
+     <script type="text/javascript" src="js/index.js">
+     </script>
+</body>
+</html>
